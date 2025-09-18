@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="NASA's Three Featured Galaxies">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Three Galaxies, Infinite Wonders</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/telescope-favicon.ico">
+
+  <style>
+    :root {
+      --maxw: 1100px;
+      --gap: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #111;
+    }
+
+    header,
+    main,
+    footer {
+      text-align: center;
+    }
+
+    /* HERO section */
+    .hero {
+      width: 100%;
+      max-width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    h1 {
+      margin: 24px 0 8px;
+      text-transform: uppercase;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: 0.12em;
+    }
+
+    h2.subtitle {
+      margin: 8px 0 28px;
+      font-size: clamp(1rem, 2.6vw, 1.6rem);
+      font-weight: 700;
+    }
+
+    /* 3x1 grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--gap);
+      align-items: start;
+      margin-bottom: 28px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .card h3 {
+      margin: 16px 0 8px;
+      font-size: 1.6rem;
+    }
+
+    .card p {
+      margin: 0 auto;
+      max-width: 30ch;
+      line-height: 1.45;
+    }
+
+    footer {
+      margin: 36px 0 48px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO IMAGE -->
+  <div class="hero">
+    <img src="img/galaxy-header-original.jpg" alt="Galaxy starscape header">
+  </div>
+
+  <header class="container">
+    <h1>Three Galaxies, Infinite Wonders</h1>
+    <h2 class="subtitle">Featuring NASA’s Breathtaking Cosmic Images</h2>
+  </header>
+
+  <main class="container">
+    <!-- Image row -->
+    <div class="grid">
+      <figure>
+        <img src="img/galaxy-NGC6744-original.jpg" alt="Spiral Galaxy NGC 6744" width="300" height="300">
+        <figcaption>Spiral Galaxy NGC 6744</figcaption>
+      </figure>
+      <figure>
+        <img src="img/galaxy-M102-original.jpg" alt="M102 Edge-on Disk Galaxy" width="300" height="300">
+        <figcaption>M102: Edge-on Disk Galaxy</figcaption>
+      </figure>
+      <figure>
+        <img src="img/galaxy-M31-original.jpg" alt="M31 Andromeda Galaxy" width="300" height="300">
+        <figcaption>M31: Andromeda</figcaption>
+      </figure>
+    </div>
+
+    <!-- Text under each image -->
+    <section class="grid">
+      <article class="card">
+        <h3>Spiral Galaxy NGC 6744</h3>
+        <p>
+          Big, beautiful spiral galaxy
+          <a href="https://apod.nasa.gov/apod/ap241101.html">NGC 6744</a> is nearly 175,000 light-years across,
+          larger than our own Milky Way.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>M102: Edge-on Disk Galaxy</h3>
+        <p>
+          What kind of celestial object is this? The
+          <a href="https://apod.nasa.gov/apod/ap240306.html">M102</a>, a relatively normal galaxy — but seen from its edge.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>M31: Andromeda</h3>
+        <p>
+          The most distant object easily visible to the unaided eye is
+          <a href="https://apod.nasa.gov/apod/ap240908.html">M31</a>, the great Andromeda Galaxy.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER with NASA Logo -->
+  <footer>
+    <img src="img/NASA_logo.svg" alt="NASA logo" width="100" height="85">
+  </footer>
+
+</body>
+</html>
