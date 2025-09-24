@@ -1,5 +1,4 @@
 # Lab-Engagement-4-Working-with-Images
-# Lab Engagement #4: Working with Images
 
 This repository contains my submission for Lab Engagement #4.
 
